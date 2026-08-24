@@ -1,0 +1,23 @@
+# Java
+*.class
+out/
+target/
+
+# C# / .NET
+bin/
+obj/
+*.user
+*.suo
+
+# IDEs
+.idea/
+.vs/
+*.iml
+
+# Python (script do relatorio)
+__pycache__/
+*.pyc
+
+# Sistema
+Thumbs.db
+desktop.ini
