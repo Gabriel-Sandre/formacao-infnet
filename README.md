@@ -14,7 +14,9 @@ enunciado e evidência de execução.
 java/     Fundamentos de Desenvolvimento com Java
   tp1/    Ambiente, primeiro projeto, variáveis, entrada de dados e depuração
   tp2/    Entrada do usuário, controle de fluxo e estruturas de repetição
-csharp/   Exercícios de aula (a disciplina formal começa no próximo bloco)
+csharp/   Fundamentos de Desenvolvimento com C#
+  exercicios/  Prática de aula que antecedeu a disciplina formal
+  TP2-c#/      Datas, entrada de dados, controle de fluxo e repetição
 ```
 
 ## Java — TP2 em detalhe
@@ -52,6 +54,39 @@ java CalculadoraMedia
 ```
 
 Todos leem dados do teclado via `Scanner`.
+
+## C# — TP2 em detalhe
+
+O TP2 também reúne 12 programas, agora em quatro frentes:
+
+| # | Programa | O que exercita |
+|---|---|---|
+| 01 | `CalculoIdadePrecisa` | `DateTime`, empréstimo de dias entre meses |
+| 02 | `DiasProximoAniversario` | `DateTime`, ano bissexto na comparação de datas |
+| 03 | `DiferencaEntreDatas` | `DateTime` e `TimeSpan`, normalização de ordem das datas |
+| 04 | `FormularioCadastroSimples` | `Console.ReadLine()`, formatação de saída |
+| 05 | `ConversorTemperatura` | fórmulas de conversão, `:F2` |
+| 06 | `CalculoIMC` | faixas de classificação com `if / else if` encadeado |
+| 07 | `VerificadorParImpar` | operador `%`, números negativos |
+| 08 | `ClassificacaoNotaEscolar` | faixas de nota, validação de entrada |
+| 09 | `CalculadoraSalarioLiquido` | faixas de imposto sobre o valor total |
+| 10 | `ContagemRegressiva` | `for` decrescente, formatação de lista |
+| 11 | `TabuadaInterativa` | `for`, interpolação de string |
+| 12 | `JogoAdivinhacao` | `while`, `Random`, contagem de tentativas |
+
+O arquivo `csharp/TP2-c#/build_report.py` segue o mesmo modelo do de Java: lê os
+`.cs` da pasta `src/`, junta com os enunciados e os prints de execução em
+`screenshots/` e gera o PDF final.
+
+## Como executar (C#)
+
+```bash
+cd csharp/TP2-c#/src
+dotnet new console -o teste
+# substitua o Program.cs gerado pelo arquivo que quer rodar
+cd teste
+dotnet run
+```
 
 ---
 
