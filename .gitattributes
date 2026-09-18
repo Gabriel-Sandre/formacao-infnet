@@ -1,0 +1,3 @@
+# Os scripts em Python so montam os relatorios em PDF; o conteudo dos trabalhos e Java e C#
+*/*/build_report.py linguist-vendored
+*.pdf linguist-documentation
